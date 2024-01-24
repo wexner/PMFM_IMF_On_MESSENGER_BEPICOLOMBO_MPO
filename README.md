@@ -18,13 +18,13 @@ The used IMF cases are:
     npp  
 and indicate the polarity of the IMF Bx, By, and Bz component in the MASO coordinate system.
 E.g. pnp stands for 
-    IMF Bx = + 14 nT
-    IMF By = -  8 nT
-    IMF Bz = +  6 nT
+    IMF Bx = + 14 nT,
+    IMF By = -  8 nT,
+    IMF Bz = +  6 nT.
 
 The MASO coordinate system (Mercury Anti-Solar Orbital) is a planet-centered system.
 The X- component is aligned with the upstream solar wind direction.
-The Z- component is antiparallel to the planetary rotation axis
+The Z- component is antiparallel to the planetary rotation axis.
 The Y- compnent completes the right-handed system and points roughly into Mercury's orbital motion.
 
 Under the assumption that aberration angles can be omitted, 
@@ -33,15 +33,15 @@ system MSO (Mercury Solar Orbital) by switching the
 polarity of the X- and Y- components while leaving the Z- component unchanged.
 
 The trajectories considered in this study are named as follows:
-    M1 : MESSENGER's first flyby
-    M2 : MESSENGER's second flyby
-    MSB1 : BepiColombo's first swingby
-    MSB2 : BepiColombo's second swingby
-    MSB3 : BepiColombo's third swingby
-    MSB4 : BepiColombo's fourth swingby
-    MSB6 : BepiColombo's sixth swingby
-
+    M1 : MESSENGER's first flyby,
+    M2 : MESSENGER's second flyby,
+    MSB1 : BepiColombo's first swingby,
+    MSB2 : BepiColombo's second swingby,
+    MSB3 : BepiColombo's third swingby,
+    MSB4 : BepiColombo's fourth swingby,
+    MSB6 : BepiColombo's sixth swingby,
     MPO+descendingApoherm
+    
 The descending apoherm for each MPO orbit is located at $0^\circ$, $45^\circ$, $90^\circ$ and $180^\circ$ with respect to the positive x-axis, i.e., at the nightside, nightside-dawnside, dawnside and dayside, respectively.
 The respective trajectory files are named 
     MPO000, MPO045, MPO090, MPO180.
@@ -70,7 +70,6 @@ Where
     and the orbit's center within the geographic equator plane, 
     counted in the negative mathematical direction. 
     Used in artillery degrees, that is, a full circle is represented by 3600 (three thousand six hundred) degrees.
-
     POS_X, POS_Y, POS_Z in Kilometer
     B_X, B_Y, B_Z in nT
 
