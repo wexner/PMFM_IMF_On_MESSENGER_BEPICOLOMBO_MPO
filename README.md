@@ -22,15 +22,15 @@ The used IMF cases are:
 and indicate the polarity of the IMF Bx, By, and Bz component in the MASO coordinate system.
 E.g. pnp stands for 
 
-    IMF Bx = + 14 nT,
-    IMF By = -  8 nT,
-    IMF Bz = +  6 nT.
+    IMF Bx = + 14 nT, p,
+    IMF By = -  8 nT, n,
+    IMF Bz = +  6 nT, p.
 
 The MASO coordinate system (Mercury Anti-Solar Orbital) is a planet-centered system.
 
     The X- component is aligned with the upstream solar wind direction.
-    The Z- component is antiparallel to the planetary rotation axis.
-    The Y- compnent completes the right-handed system and points roughly into Mercury's orbital motion.
+    The Z- component is antiparallel to the planetary rotation axis (Also antiparallel to magnetic moment of Mercury) and points northwards.
+    The Y- component completes the right-handed system and points roughly into Mercury's orbital motion.
 
 Under the assumption that aberration angles can be omitted, 
 the MASO system is easily converted into the more usual 
@@ -45,6 +45,7 @@ The trajectories considered in this study are named as follows:
     MSB2 : BepiColombo's second swingby,
     MSB3 : BepiColombo's third swingby,
     MSB4 : BepiColombo's fourth swingby,
+    (MSB5 : BepiColombo's fifth swingby, omitted due to its closest approach being too far away from the planet to be considered in this study),
     MSB6 : BepiColombo's sixth swingby,
     MPO+descendingApoherm
     
@@ -55,9 +56,11 @@ The respective trajectory files are named
 
 
 The file names that represent model results by AIKEF are ordered as follows:
-trajectory _ Model _ Coordinate System _ PMFM+IMF
-E.g. MSB1_AIKEF_MASO_Dnpn stands for
-    BepiColombo's first swingby, AIKEF results in the MASO system, PMFM is Dipole, IMF direction is npn
+
+    trajectory _ Model _ Coordinate System _ PMFM+IMF
+    E.g. MSB1_AIKEF_MASO_Dnpn stands for
+        BepiColombo's first swingby, AIKEF results in the MASO system, PMFM is Dipole, IMF direction is npn
+        
 The columns inside the files are named as follows:
 
     Time	POS_X	POS_Y	POS_Z	B_X	B_Y	B_Z
@@ -69,9 +72,11 @@ Where
 
 
 The file names that represent the theoretical values for the planetary magnetic field models are ordered as follows:
-trajectory _ PMFM _ Coordinate System 
-E.g. MPO180_classO_MASO stands for
-    MPO's orbit with its descending apoherm on the dayside, PMFM is Octupole, in the MASO system
+
+    trajectory _ PMFM _ Coordinate System 
+    E.g. MPO180_classO_MASO stands for
+        MPO's orbit with its descending apoherm on the dayside, PMFM is Octupole, in the MASO system
+        
 The columns inside the files are named as follows:
 
     AA	POS_X	POS_Y	POS_Z	B_X	B_Y	B_Z
